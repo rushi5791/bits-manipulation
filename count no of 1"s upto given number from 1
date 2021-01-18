@@ -1,0 +1,16 @@
+int Solution::solve(int A) {
+  long long int count=0;
+int N=A+1,i;
+int size = log2(N)+1;
+for(i=0;i<size;i++)
+{
+int po1 = (1<<(i+1));
+int po0 = (1<<i);
+count += ( N/po1 )*po0;
+if(N%po1 > po0)
+count += (N%po1) - po0 ;
+}
+return count%1000000007;
+ }
+
+
