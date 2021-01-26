@@ -6,6 +6,7 @@ int Solution::numSetBits(unsigned int A) {
     unsigned int cnt=0;
     while(A!=0)
     {
+        int cnt=0;
         A = A&(A-1);
         ++cnt;
         continue;
