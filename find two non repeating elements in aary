@@ -5,8 +5,7 @@ using namespace std;
 /* This function sets the values of 
 *x and *y to non-repeating elements
 in an array arr[] of size n*/
-void get2NonRepeatingNos(int arr[], int n, 
-								int *x, int *y) 
+void get2NonRepeatingNos(int arr[], int n, int *x, int *y) 
 { 
 	/* Will hold Xor of all elements */
 	int Xor = arr[0]; 
